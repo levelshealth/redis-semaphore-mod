@@ -16,9 +16,9 @@ export default class RedisMutex extends Lock {
     if (!client) {
       throw new Error('"client" is required')
     }
-    if (!(client instanceof Redis)) {
-      throw new Error('"client" must be instance of ioredis client or cluster')
-    }
+    // if (!(client instanceof Redis)) {
+    //   throw new Error('"client" must be instance of ioredis client or cluster')
+    // }
     if (!key) {
       throw new Error('"key" is required')
     }
